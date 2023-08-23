@@ -3,4 +3,8 @@ public struct LocalPckDemoApp {
 
     public init() {
     }
+    
+    static public func getText() -> String {
+        return "static"
+    }
 }

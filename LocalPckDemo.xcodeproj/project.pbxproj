@@ -11,6 +11,7 @@
 		455DABC32A95BCEE00154389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455DABC22A95BCEE00154389 /* ContentView.swift */; };
 		455DABC52A95BCEF00154389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455DABC42A95BCEF00154389 /* Assets.xcassets */; };
 		455DABC82A95BCEF00154389 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455DABC72A95BCEF00154389 /* Preview Assets.xcassets */; };
+		455DABD02A95C25F00154389 /* LocalPckDemoApp in Frameworks */ = {isa = PBXBuildFile; productRef = 455DABCF2A95C25F00154389 /* LocalPckDemoApp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455DABD02A95C25F00154389 /* LocalPckDemoApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +39,7 @@
 			children = (
 				455DABBF2A95BCEE00154389 /* LocalPckDemo */,
 				455DABBE2A95BCEE00154389 /* Products */,
+				455DABCE2A95C25F00154389 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +70,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		455DABCE2A95C25F00154389 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = LocalPckDemo;
+			packageProductDependencies = (
+				455DABCF2A95C25F00154389 /* LocalPckDemoApp */,
+			);
 			productName = LocalPckDemo;
 			productReference = 455DABBD2A95BCEE00154389 /* LocalPckDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +352,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		455DABCF2A95C25F00154389 /* LocalPckDemoApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LocalPckDemoApp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 455DABB52A95BCEE00154389 /* Project object */;
 }
