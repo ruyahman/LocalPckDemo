@@ -7,14 +7,21 @@
 
 import SwiftUI
 import LocalPckDemoApp
+import Common
 
 struct ContentView: View {
+    enum SampleError: Error {
+        case general
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text(LocalPckDemoApp.getText())
+            
+            CommonLoadingView()
         }
         .padding()
     }

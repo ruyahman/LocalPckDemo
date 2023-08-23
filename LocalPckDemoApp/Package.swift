@@ -5,11 +5,13 @@ import PackageDescription
 
 let package = Package(
     name: "LocalPckDemoApp",
+    platforms: [
+      .iOS(.v15),
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "LocalPckDemoApp",
-            targets: ["LocalPckDemoApp"]),
+        .library(name: "LocalPckDemoApp", type: .static, targets: ["LocalPckDemoApp"]),
+        .library(name: "Common", targets: ["Common"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,7 +22,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "LocalPckDemoApp",
-            dependencies: []),
+            dependencies: ["Common"]),
+        .target(
+          name: "Common",
+          dependencies: []
+        ),
         .testTarget(
             name: "LocalPckDemoAppTests",
             dependencies: ["LocalPckDemoApp"]),
